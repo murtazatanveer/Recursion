@@ -15,14 +15,12 @@ printf("\n\n");
 
 void hello(int num){
 
-    if (num<=0){
 
-        return;
 
-    }
+printf("\nHELLO WORLD :)");
+printf("\nhy");
 
 hello(num-1);
-printf("\nHELLO WORLD :)");
 
 
 
