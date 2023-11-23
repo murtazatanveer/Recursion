@@ -7,19 +7,22 @@ int num;
 printf("How many times you like to print \" Hello World \" : ");
 scanf("%d",&num);
 
+printf("\n");
+
 hello(num);
 
-printf("\n\n");
+
 
 }
 
 void hello(int num){
 
 
+if (num==0){
+    return;
+}
 
 printf("\nHELLO WORLD :)");
-printf("\nhy");
-
 hello(num-1);
 
 
