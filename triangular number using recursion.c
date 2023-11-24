@@ -1,29 +1,23 @@
 #include<stdio.h>
-void sum();
+int sum();
 
 int main(){
 
-int num;
+int n;
+printf("\nEnter number you want triangular number of : ");
+scanf("%d",&n);
 
-printf("\nEnter number you want to find Triangular Number : ");
-
-scanf("%d",&num);
-sum(num);
+printf("\nTriangular number of %d is %d ",n,sum(n));
 
 }
 
-void sum(int num){
+int sum(int num){
 
+    if(num==1){
 
+        return 1;
+    }
 
-if(num==0){
-
-    return;
-}
-
-
-int i =sum(num-1);
-printf("\nTriangular Number is : %d ",s);
-
-
+    int sum_of_num = sum(num-1) + num;
+    return sum_of_num;
 }
